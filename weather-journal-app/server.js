@@ -23,3 +23,22 @@ app.use(express.static('website'));
 // Setup Server
 const listening = console.log(`running on localhost: ${port}`);
 const server = app.listen(port, listening);
+
+// Callback to debug
+console.log(`running on localhost: ${port}`);   
+
+// Initialize all route with a callback function 
+let projectData = {};       
+app.get('/all', (req, res) => {
+    res.send(projectData);
+});
+// Post Route
+// I am supposed to add it with a key in the post function
+app.post('/add', (req, res) => {
+    projectData = {
+        date: req.body.date,
+        temp: req.body.temp,
+        content: req.body.userResponse,
+    }
+    res.send(projectData);
+});  
