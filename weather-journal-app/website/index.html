@@ -8,26 +8,31 @@
 </head>
  <body>
 <div id = "app">
-  <div class ="holder headline">
+  <div class ="headline">
     Weather Journal App
   </div>
-  <div class ="holder city">
-    <label for="city">Enter city here</label>
-    <input type="text" id="city" placeholder="enter city name here">
+  <div class = "holder">
+  <div class ="city">
+    <label for="city">Enter city here:</label>
+    <input type="text" id="city" placeholder="city name">
   </div>
-  <div class ="holder feel">
-    <label for="feelings">How are you feeling today?</label>
-    <textarea class= "myInput" id="feelings" placeholder="Enter your feelings here" rows="9" cols="50"></textarea>
-    <button id="generate" type = "submit" onclick="generate()"> Generate </button>
+  <div class ="feel">
+    <label for="feelings">How are you feeling today:</label>
+    <input class= "myInput" id="feelings" placeholder="I am feeling..." rows="9" cols="50"></input>
   </div>
-  <div class ="holder entry">
-    <div class = "title">Most Recent Entry</div>
-   <div id = "entryHolder">
-    <div id = "date"></div> 
-   <div id = "temp"></div>
-   <div id = "content"></div>
+  <button id="generate" type = "submit" onclick="generate()"> Generate </button>
   </div>
-  </div>
+  <div class ="weather-card">
+    <div id = "date"></div>
+    <div id = "weather-main">
+      <div id = "temp"></div>
+      <div id="weather-info">
+        <div id = "weather"></div>
+        <div id = "wind-speed"></div>
+      </div>
+        <div id = "feeling"></div>
+    </div>
+      
   </div>
 <script src="app.js" type="text/javascript"></script>
 
