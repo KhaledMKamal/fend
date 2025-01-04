@@ -5,7 +5,7 @@ let projectData = {};
 const express = require ('express');
 
 // Start up an instance of app
-const port = 8000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 /* Middleware*/
