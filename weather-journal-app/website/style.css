@@ -10,18 +10,18 @@ body{
     background-color: #3b4a6b;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 1rem;
     font-family: 'Ranga', cursive;
-    font-size: 40px;
+    font-size: 4rem;
 }
 .holder{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 7rem;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 .entry{
@@ -39,7 +39,7 @@ input{
     font-family: 'Oswald', sans-serif;
     padding: 0.8rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 0.7rem;
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -50,7 +50,7 @@ button {
     color: white;
     background: #74c8d7;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background 0.3s, transform 0.3s;
   }
@@ -91,13 +91,13 @@ button:focus {
 
 .weather-card {
     background: white;
-    padding: 1.5rem;
-    border-radius: 15px;
+    padding: 1.3rem;
+    border-radius: 1.9rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   #date {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #74c8d7;
     padding-bottom: 1rem;
@@ -108,14 +108,14 @@ button:focus {
     gap: 6rem;
   }
   #temp {
-    font-size: 17rem;
-    padding: 6px;
+    font-size: 15rem;
+    padding: 0.9rem;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     color: #ff7f50;
   }
   #weather-info {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #555;
     display: flex;
     flex-direction: column;
@@ -130,4 +130,16 @@ button:focus {
     font-size: 6rem;
     font-style: italic;
     color: violet;
+  }
+
+  @media (max-width: 768px) {
+
+    .holder { 
+        flex-direction: column;
+    }
+
+    #weather-main {
+        flex-direction: column;
+    }
+
   }
